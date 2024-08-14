@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
+@font-face {
+    font-family: Miama;
+    src: url(../fonts/Miama.otf);
+}
 
 *{
     margin: 0;
@@ -12,30 +16,66 @@
       }
 
 body{
-    background: rgb(34, 34, 34);;
+    background: rgb(0, 0, 0);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container{
     max-width: 992px;
     margin: 0 auto;
 }
 
+.container-full{
+    background-color: #222222;
+    width: 100%;
+}
 
+h2{
+    font-weight: 900;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+h3{
+    font-weight: 900;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+h4{
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.25em;
+}
+
+h5{
+    font-weight: 900;
+    color: #fff;
+    font-size: 1em;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+header{
+    background: linear-gradient(180deg, rgb(255 255 255 / 8%), rgb(0 0 0));
+}
+/* Nav Section */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3em;
-
+    padding-top: 3em;
 }
 
-h1{
+.logo{
     color: rgb(230, 83, 60);
     font-size: 1.5em;
     font-weight: 700;
     font-style: italic;
 }
-
-/* nav div{
-    border: 1px solid rgba(255, 255, 255, 0.1);
-} */
 
 nav ul{
     display: flex;
@@ -43,12 +83,9 @@ nav ul{
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 13px 0 13px 13px;
+    padding: 13px 0px 13px 5px;
     border-radius: 25px;
-}
-
-nav ul li:first-child a{
-    background-color: rgb(230, 83, 60);
+    
 }
 
 nav ul li a{
@@ -61,9 +98,569 @@ nav ul li a{
 
 nav ul li a:hover{
     background-color: rgb(230, 83, 60);
+    transition: background-color 0.3s;
 }
 
-nav ul li a:nth-last-child{
-    margin-right: 0;
+nav ul li:first-child a{
+    background-color: rgb(230, 83, 60);
+}
 
+nav ul li:last-child a{
+    margin-right: 0.25em;
+
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+
+/* Banner Section */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+h1{
+    font-size: 4.8em;
+    color: rgb(255, 255, 255);
+    line-height: 1em;
+    font-weight: 900;
+}
+
+h1 span{
+    color: rgb(255, 255, 255);
+    font-family: Miama;
+    font-size: 2em;
+}
+
+.banner-left p{
+    font-size: 1em;
+    padding: 1em 0;
+}
+
+.btn-primary{
+    background-color: rgb(230, 83, 60);
+    padding: 1em 2em;
+    border-radius: 2em;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    margin-right: 1em;
+    font-weight: 700;
+}
+
+.btn-primary:hover{
+    background-color: rgba(230, 83, 60, 0);
+    padding: 1em 2em;
+    border-radius: 2em;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    margin-right: 1em;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+}
+
+.btn-clear{
+    background-color: rgba(230, 83, 60, 0);
+    padding: 1em 2em;
+    border-radius: 2em;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    margin-right: 1em;
+}
+
+.btn-clear:hover{
+    background-color: rgb(230, 83, 60);
+    padding: 1em 2em;
+    border-radius: 2em;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    margin-right: 1em;
+    transition: background-color 0.3s;
+}
+
+.banner button:hover{
+    cursor: pointer;
+}
+
+.banner-right{
+    position: relative;
+}
+
+.banner-right h4, p{
+    margin: 0;
+    padding: 0;
+}
+
+.banner-right h4{
+    color: #fff;
+}
+
+.banner-right .banner-card-1{
+    position: absolute;
+    right: -60px;
+    top: 183px;
+    background-color: #ffffff1f;
+    padding: 10px 10px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 10.25em;
+    height: 4.5em;
+}
+
+.banner-right .banner-card-1 h4{
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+.banner-right .banner-card-2{
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    background-color: #ffffff1f;
+    padding: 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10.25em;
+    height: 4.5em;
+}
+
+.banner-right .banner-card-2 h4{
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+.banner-right .banner-card-2 .banner-live-icon{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(230, 83, 60);
+    border-radius: 20px;
+    margin-right: 5px;
+}
+/* End Header */
+
+/* Start Change Your Habits */
+.change-your-habits .description{
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.change-your-habits .card-section{
+    display: flex;
+}
+
+.change-your-habits .card{
+    text-align: center;
+}
+
+.change-your-habits .card img{
+    border-radius: 50%;
+    border: 6px solid #191919;
+    margin-bottom: 1.3em;
+}
+
+
+.run-extra-mile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0;
+    background-color: #222222;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.run-extra-mile img{
+    width: 370px;
+    border-radius: 15px;
+}
+
+.run-extra-mile p{
+    padding: 1em 0;
+}
+
+.run-extra-mile button{
+    width: 14em;
+}
+
+/* End Change Your Habits */
+
+/* Start BMI Calculator */
+.bmi-calculator .description{
+    display: flex;
+    justify-content: center;
+    margin: 4em auto;
+}
+
+.bmi-calculator .calculator{
+    padding: 2em 0;
+}
+
+.bmi-calculator .calculator .chart{
+    grid-area: chart;
+}
+
+.bmi-calculator .calculator .chart h3{
+    margin-bottom: 1.3em;
+}
+
+.bmi-calculator .calculator .form{
+    grid-area: form;
+}
+
+.bmi-calculator .calculator{
+    display: grid;
+    grid-template-areas: "chart form form";
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* justify-content: space-between;
+    align-items: center;*/
+    gap: 5em; 
+}
+
+.bmi-calculator .calculator p{
+    margin: 1em 0;
+}
+
+.bmi-calculator .calculator td{
+    padding: 0.5em;
+    border: 1px solid #2c2c2c;
+}
+
+.bmi-calculator .calculator tr:first-child td{
+    font-weight: 700;
+    color: #fff;
+}
+
+.bmi-calculator .calculator .form .input1{
+    grid-area: input1;
+}
+
+.bmi-calculator .calculator .form .input2{
+    grid-area: input2;
+}
+
+.bmi-calculator .calculator .form .input3{
+    grid-area: input3;
+}
+
+.bmi-calculator .calculator .form .input4{
+    grid-area: input4;
+}
+
+.bmi-calculator .calculator .form .input5{
+    grid-area: input5;
+}
+
+.bmi-calculator .calculator .form form {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-areas: 
+        "input1 input2"
+        "input3 input4"
+        "input5 input5";
+    gap: 5px;
+
+}
+
+.bmi-calculator .calculator .form input,select{
+    /* height: 2em; */
+    padding: 1em;
+    background-color: #383838;
+    border: 1px solid #383838;
+    border-radius: 0.5em;
+}
+
+.bmi-calculator .calculator button{
+    margin-top: 1em;
+}
+
+/* End BMI Calculator */
+
+
+/* Start Team Section */
+.our-team .team-description{
+    text-align: center;
+    margin: 2em 0;
+}
+
+.our-team .team-member{
+    position: relative;
+}
+
+.our-team .team-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    background-color: #191919;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 3em;
+}
+
+.our-team .team-img img{
+    width: 100%;
+    height: 18em;
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+.our-team .member-name-desig{
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
+
+/* End Team Section */
+
+footer .footer-section-1{
+    grid-area: footer-section-1;
+}
+
+footer .footer-section-2{
+    grid-area: footer-section-2;
+}
+
+footer .footer-section-3{
+    grid-area: footer-section-3;
+}
+
+footer .footer-about-nav{
+    display: grid;
+    grid-template-areas: "footer-section-1 footer-section-1 footer-section-2 footer-section-3";
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 0;
+}
+
+footer .logo{
+    font-size: 3em;
+}
+
+footer .container ul li{
+    line-height: 2em;
+    list-style-type: none;
+}
+
+
+footer .container ul li:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-bottom{
+    padding: 1em 0;
+}
+
+.footer-bottom p{
+    margin-top: 1em;
+    text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    nav ul{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .banner{
+        display: block;
+        margin-top: 3em;
+    }
+
+    .banner img{
+        width: 100%;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    
+    .btn-primary{
+        margin-right: 0.5em;
+    }
+
+    .btn-primary:hover{
+        margin-right: 0.5em;
+    }
+
+    .btn-clear{
+        margin-right: 0;
+        margin-top: 1em;
+    }
+
+    .btn-clear:hover{
+        margin-right: 0;
+        margin-top: 1em;
+    }
+
+    .banner-right .banner-card-1 {
+        right: 0;
+        top: 11em;
+    }
+    .banner-right .banner-card-2 {
+        left: 1em;
+    }
+
+    .change-your-habits .card-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .change-your-habits .card {
+        margin-bottom: 2em;
+        text-align: center;
+    }
+
+    .change-your-habits h2{
+        font-size: 1.6em;
+    }
+
+    .run-extra-mile{
+        display: block;
+    }
+
+    .run-extra-mile h2{
+        font-size: 2em;
+    }
+
+    .run-extra-mile button {
+        width: 100%;
+    }
+
+    .run-extra-mile img{
+        width: 100%;
+        margin-top: 1.5em;
+    }
+
+    .run-extra-mile p br{
+        display: none;
+    }
+
+    .bmi-calculator .description h2{
+        font-size: 2em;
+    }
+
+    .bmi-calculator .calculator{
+        display: grid;
+        grid-template-areas: "chart" "form";
+        gap: 5em; 
+    }
+
+    .bmi-calculator .calculator .form form {
+        display: grid;
+        grid-template-areas:  "input1" "input2" "input3" "input4" "input5";
+        /* grid-template-areas:  "input1 input2" "input3 input4" "input5 input5"; */
+    }
+
+    .our-team .team-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-team h2{
+        font-size: 2em;
+    }
+
+    footer .footer-about-nav {
+        display: grid;
+        grid-template-areas: "footer-section-1" "footer-section-2" "footer-section-3";
+    }
+
+    footer .footer-about-nav .footer-section-1 p{
+        margin-top: 1em;
+    }
+
+    footer .footer-about-nav .footer-section-1 p br{
+        display: none;
+    }
+
+    footer .footer-about-nav .footer-section-2{
+        margin: 2em 0;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .container{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .mobile-menu-icon{
+        display: none;
+    }
+
+    .banner{
+        display: block;
+        margin-top: 3em;
+    }
+
+    .banner-right {
+        text-align: center;
+    }
+
+    .banner-right .banner-card-1{
+        right: 1em;
+    }
+
+    .banner-right .banner-card-2{
+        left: 1em;
+    }
+
+    .change-your-habits .description p br{
+        display: none;
+    }
+
+    .change-your-habits .card-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .change-your-habits .card{
+        margin-bottom: 2em;
+    }
+
+    .run-extra-mile img {
+        border-radius: 15px;
+        height: 20em;
+        width: 40%;
+        object-fit: cover;
+        margin-left: 0.5em;
+    }
+
+    .run-extra-mile p br{
+        display: none;
+    }
+
+    .bmi-calculator .calculator{
+        display: block;
+    }
+
+    .bmi-calculator .calculator .chart{
+        margin-bottom: 3em;
+    }
+
+    footer .footer-about-nav {
+        grid-template-areas: "footer-section-1 footer-section-1" "footer-section-2 footer-section-3";
+        justify-content: stretch;
+    }
+
+    footer .footer-section-1{
+        margin-bottom: 2em;
+    }
+
+    footer .footer-section-1 p br{
+        display: none;
+    }
 }
