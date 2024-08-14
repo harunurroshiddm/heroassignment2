@@ -265,6 +265,58 @@ h1 span{
     margin-bottom: 1.3em;
 }
 
+.plan .description{
+    text-align: center;
+    padding: 1em;
+}
+
+.plan .package{
+    line-height: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.plan .package>div{
+    border: 1px solid #3a3a3a;
+    border-radius: 1.3em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.plan .package>div:last-child{
+    margin-right: 0;
+}
+
+.plan h5{
+    margin-bottom: 1em;
+}
+
+.plan .price span{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 700;
+}
+
+.plan .padding:nth-child(1){
+    text-align: center;
+    }
+
+.plan .padding{
+padding: 1em;
+}
+
+.plan .daysweek{
+    text-align: center;
+    background: #ffffff38;
+}
+
+.plan ul {
+    list-style-type: none;
+}
+
+.plan button{
+    width: 100%;
+}
 
 .run-extra-mile{
     display: flex;
@@ -325,6 +377,10 @@ h1 span{
 
 .bmi-calculator .calculator p{
     margin: 1em 0;
+}
+
+.bmi-calculator table{
+    border-collapse: collapse;
 }
 
 .bmi-calculator .calculator td{
@@ -565,6 +621,16 @@ footer .container ul li:hover{
         /* grid-template-areas:  "input1 input2" "input3 input4" "input5 input5"; */
     }
 
+.plan .package{
+        line-height: 2em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+.plan .package>div{
+        margin-right: 0;
+    }
+
     .our-team .team-img{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -641,6 +707,16 @@ footer .container ul li:hover{
 
     .run-extra-mile p br{
         display: none;
+    }
+
+.plan .package{
+        line-height: 2em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+.plan .package>div:nth-child(2){
+        margin-right: 0;
     }
 
     .bmi-calculator .calculator{
